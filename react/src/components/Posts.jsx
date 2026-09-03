@@ -1,7 +1,7 @@
 import Post from "./Post"
 import './Posts.css'
 
-const postData = [
+const postsData = [
     {
       "id": 1,
       "userId": 1,
@@ -51,15 +51,14 @@ const Posts = () => {
 
                 <div className="section-header">
                     <h2>Posts</h2>
-                    <span>4 posts</span>
+                    <span>{postsData.length}</span>
                 </div>
 
                 <div className="posts-list">
-                    {postsData.map((post, i) => <Post key={1} {...post} />)}
+                    {postsData.map((post, i) => <Post key={i} {...post} />)}
                 </div>
         </section>
         
-
     )
 }
 export default Posts

@@ -1,0 +1,31 @@
+"users": [
+    {
+      "id": 1,
+      "name": "Иван Петров",
+      "username": "ivan_petrov",
+      "email": "ivan@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+      "id": 2,
+      "name": "Анна Смирнова",
+      "username": "anna_smirnova",
+      "email": "anna@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=2"
+    },
+    {
+      "id": 3,
+      "name": "Максим Иванов",
+      "username": "max_ivanov",
+      "email": "max@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=3"
+    },
+    {
+      "id": 4,
+      "name": "Елена Кузнецова",
+      "username": "elena_k",
+      "email": "elena@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=4"
+    }
+  ]
+]

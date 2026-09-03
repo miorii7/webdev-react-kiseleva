@@ -1,4 +1,6 @@
 import Post from "./Post"
+import './Posts.css'
+
 const postData = [
     {
       "id": 1,
@@ -53,7 +55,7 @@ const Posts = () => {
                 </div>
 
                 <div className="posts-list">
-                    {<Post />}
+                    {postsData.map((post, i) => <Post key={1} {...post} />)}
                 </div>
         </section>
         

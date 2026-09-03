@@ -1,19 +1,24 @@
-const Post = () => {
+import './Post.css'
+
+const Post = ({title, body, image, likes, comments, createdAt}) => {
     return (
         <article className="post">
             <div className="post-top">
-               <span>02.09.2026</span>
+               <span>{createdAt}</span>
             </div>
 
-            <h3>Путешествие</h3>
+            <h3>{title}</h3>
 
-            <p>Невероятные виды и море впечатлений!</p>
+            <p>{body}</p>
 
-            <img src="https://picsum.photos/id/1015/800/500"alt="Путешествие"/>
+            {image && <img
+               src={image}
+               alt={title}
+            />}
 
             <div className="post-bottom">
-                <span>❤️ 63</span>
-                <span>💬 11</span>
+                <span>❤️ {likes}</span>
+                <span>💬 {comments}</span>
             </div>
         </article>
                     
